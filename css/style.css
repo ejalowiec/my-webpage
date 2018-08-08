@@ -1,0 +1,10 @@
+/* Available fonts
+font-family: 'Saira Condensed', sans-serif;
+font-family: 'Saira', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
