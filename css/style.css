@@ -9,6 +9,12 @@ font-family: 'Saira', sans-serif;
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 /* Header */
 
 header {
@@ -124,7 +130,7 @@ header img {
 
     header img {
         height: 53%;
-        width: 60%;
+        /*        width: 60%;*/
         right: 0%;
     }
 }
@@ -358,8 +364,141 @@ header img {
         background-color: #fff;
         color: #111;
     }
+}
 
-    /* Czym się zajmuję section */
-    section {
+
+section {
+    min-height: 30vh;
+    max-width: 1600px;
+}
+
+/* Jakie strony internetowe tworzę section */
+
+section.features {
+    padding: 5%;
+    margin: 40px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/*
+.features.feature {
+    height: 100vh;
+}
+*/
+
+.features img {
+    width: 100%;
+    max-width: 375px;
+}
+
+.features h2 {
+    margin-bottom: 25px;
+}
+
+.features h3 {
+    font-size: 22px;
+}
+
+.features p {
+    margin: 15px 0 32px;
+    font-family: 'Saira', sans-serif;
+    line-height: 170%;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: none;
+}
+
+@media (min-width:360px) {
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .features h3 {
+        font-size: 24px;
+    }
+    .features p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    .features .feature {
         height: 100vh;
     }
+}
+
+@media (min-width:768px) {
+    .features h2 {
+        font-size: 50px;
+    }
+
+    .features h3 {
+        font-size: 36px;
+    }
+    .features p {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    section.features {
+        margin-top: 40px;
+        padding: 5% 2%;
+        text-align: center;
+    }
+
+    .features .feature {
+        height: 100vh;
+        float: left;
+        width: 33%;
+        padding: 0 1%;
+    }
+
+    .features h2 {
+        font-size: 44px;
+    }
+
+    .features h3 {
+        font-size: 23px;
+    }
+    .features p {
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 0 4%;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    section.features {
+        margin-top: 40px;
+        padding: 5% 2%;
+        /*        text-align: center;
+ */
+    }
+
+    .features .feature {
+        height: 100vh;
+        float: left;
+        width: 33%;
+        padding: 0 1%;
+    }
+
+    .features h2 {
+        font-size: 60px;
+    }
+
+    .features h3 {
+        font-size: 32px;
+    }
+    .features p {
+        font-size: 21px;
+        line-height: 140%;
+        padding: 0 9%;
+    }
+}
