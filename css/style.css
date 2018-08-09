@@ -8,3 +8,358 @@ font-family: 'Saira', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header */
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #29a6dc;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header > * {
+    position: absolute;
+}
+
+header div.welcome {
+    z-index: 10;
+    top: 7%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #fff;
+}
+
+header .welcome h1 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+header .welcome h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header .welcome button {
+    padding: 0 20px;
+    border: 1px solid white;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Saira', sans-serif;
+    background-color: transparent;
+    color: #fff;
+}
+
+header img {
+    height: 50%;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+    header .welcome h1 {
+        font-size: 24px;
+    }
+
+    header .welcome h2 {
+        font-size: 24px;
+    }
+
+    header .welcome button {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+    header .welcome h1 {
+        font-size: 26px;
+    }
+
+    header .welcome h2 {
+        font-size: 26px;
+    }
+
+    header .welcome button {
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    header img {
+        right: -10%;
+    }
+}
+
+@media (min-width: 697px) and (orientation: portrait) {
+
+    header .welcome p {
+        font-size: 40px;
+    }
+
+    header .welcome h1 {
+        font-size: 36px;
+    }
+
+    header .welcome h2 {
+        font-size: 36px;
+    }
+
+    header .welcome button {
+        margin-top: 25px;
+        font-size: 36px;
+        line-height: 65px;
+    }
+
+    header img {
+        height: 53%;
+        width: 60%;
+        right: 0%;
+    }
+}
+
+@media (min-width: 767px) and (orientation: portrait) {
+
+    header .welcome p {
+        font-size: 50px;
+    }
+
+    header .welcome h1 {
+        font-size: 46px;
+    }
+
+    header .welcome h2 {
+        font-size: 46px;
+    }
+
+    header .welcome button {
+        margin-top: 50px;
+        font-size: 36px;
+        line-height: 55px;
+    }
+
+    header img {
+        height: 53%;
+        right: 0%;
+    }
+}
+
+@media (min-width: 1023px) and (orientation: portrait) {
+
+    header .welcome p {
+        font-size: 68px;
+    }
+
+    header .welcome h1 {
+        font-size: 60px;
+    }
+
+    header .welcome h2 {
+        font-size: 60px;
+    }
+
+    header .welcome button {
+        margin-top: 55px;
+        font-size: 44px;
+        line-height: 100px;
+    }
+
+    header img {
+        height: 53%;
+        right: 0%;
+    }
+}
+
+@media (orientation: landscape) {
+    header div.welcome {
+        top: 15%;
+        left: 7%;
+        right: 48%;
+    }
+
+    header .welcome button {
+        margin-top: 40px;
+    }
+
+    header img {
+        height: 85%;
+        right: -2%;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    header .welcome h1 {
+        font-size: 24px;
+    }
+
+    header .welcome h2 {
+        font-size: 24px;
+    }
+
+    header .welcome button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    header img {
+        height: 85%;
+        right: -2%;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+
+    header div.welcome {
+        left: 3%;
+        top: 20%;
+    }
+
+    header .welcome p {
+        font-size: 45px;
+    }
+
+    header .welcome h1 {
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+    header .welcome h2 {
+        font-size: 32px;
+    }
+
+    header .welcome button {
+        margin-top: 55px;
+        font-size: 26px;
+        line-height: 60px;
+    }
+
+    header img {
+        height: 85%;
+        right: -16.5%;
+    }
+}
+
+
+@media (min-width: 1024px) and (orientation: landscape) {
+
+    header div.welcome {
+        left: 3%;
+        top: 15%;
+    }
+
+    header .welcome p {
+        font-size: 55px;
+    }
+
+    header .welcome h1 {
+        margin-top: 20px;
+        font-size: 37px;
+    }
+
+    header .welcome h2 {
+        font-size: 37px;
+    }
+
+    header .welcome button {
+        margin-top: 55px;
+        font-size: 34px;
+        line-height: 80px;
+    }
+
+    header img {
+        height: 92%;
+        right: -10%;
+
+    }
+}
+
+@media (min-width: 1366px) and (orientation: landscape) {
+
+    header div.welcome {
+        left: 3%;
+    }
+
+    header .welcome p {
+        font-size: 75px;
+    }
+
+    header .welcome h1 {
+        font-size: 60px;
+    }
+
+    header .welcome h2 {
+        font-size: 60px;
+    }
+
+    header .welcome button {
+        margin-top: 65px;
+        font-size: 44px;
+        line-height: 100px;
+    }
+
+    header img {
+        height: 100%;
+        right: 0;
+    }
+}
+
+@media (min-width: 1500px) and (orientation: landscape) {
+
+    header div.welcome {
+        left: 5%;
+        top: 8%;
+    }
+
+    header .welcome p {
+        font-size: 120px;
+    }
+
+    header .welcome h1 {
+        font-size: 60px;
+    }
+
+    header .welcome h2 {
+        font-size: 60px;
+    }
+
+    header .welcome button {
+        margin-top: 90px;
+        padding: 0 40px;
+        font-size: 40px;
+        line-height: 90px;
+    }
+
+    header img {
+        height: 100%;
+        right: 0%;
+    }
+}
+
+@media (min-width: 1024px) {
+    header .welcome button {
+        cursor: pointer;
+        border-width: 2px;
+        transition: .3s;
+    }
+    header .welcome button:hover {
+        background-color: #fff;
+        color: #111;
+    }
+
+    /* Czym się zajmuję section */
+    section {
+        height: 100vh;
+    }
