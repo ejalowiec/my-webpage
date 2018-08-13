@@ -493,14 +493,15 @@ section.features {
 
 /* Portfolio section */
 
-section.portfolio {
+.portfolio {
     margin: 0 auto;
+    padding: 10px 0 30px;
     background-color: #1e1e1e;
     color: #fff;
     font-family: 'Saira Condensed', sans-serif;
 }
 
-section.portfolio h2 {
+.portfolio h2 {
     font-size: 28px;
     font-family: 'Saira Condensed',
     sans-serif;
@@ -551,11 +552,11 @@ section.portfolio h2 {
 
 @media (min-width: 768px) {
 
-    .portfolio h1 {
+    .portfolio h2 {
         font-size: 40px;
     }
 
-    .portfolio .about h2 {
+    .portfolio .about h3 {
         font-size: 28px;
         text-indent: 40px;
     }
@@ -601,12 +602,12 @@ section.portfolio h2 {
 }
 
 @media (orientation: landscape) and (min-width: 1400px) {
-    .portfolio h1 {
+    .portfolio h2 {
         font-size: 60px;
         padding: 30px 0;
     }
 
-    .portfolio .about h2 {
+    .portfolio .about h3 {
         padding-top: 50px;
         font-size: 28px;
         text-indent: 40px;
@@ -622,4 +623,106 @@ section.portfolio h2 {
     .portfolio .project {
         margin-bottom: 40px;
     }
+}
+
+/* Slogan section */
+
+.slogan {
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    text-align: center;
+}
+
+.slogan .bg {
+    padding: 30px 10px;
+    background-color: rgba(0, 63, 114, 0.61);
+}
+
+.slogan h2 {
+    font-size: 28px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.slogan p {
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;
+    color: #fff;
+}
+
+.slogan p.author {
+    font-size: 12px;
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .slogan .bg {
+        padding: 50px 10px;
+
+    }
+
+    .slogan h2 {
+        font-size: 48px;
+        margin-bottom: 35px;
+
+    }
+
+    .slogan p {
+        font-size: 26px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .slogan .bg {
+        padding: 80px 10px;
+
+    }
+
+    .slogan h2 {
+        font-size: 60px;
+        margin-bottom: 55px;
+
+    }
+
+    .slogan p {
+        font-size: 40px;
+        width: 50%;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+    min-height: 30vh;
 }
